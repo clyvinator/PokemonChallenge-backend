@@ -33,8 +33,6 @@ app.get("/getpoketypes", (_, res) => {
 app.get("/getpokedata/:type", (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   //Get paginated pokemon data by type
-  console.log(req.query);
-  console.log(req.params);
   let responseData = {
     success: true,
     message: "",
